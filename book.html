@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bonz.ai Book</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div class="wrapper">
+    <section class="wrapper">
         <header class="header">
             <nav class="header__nav--menu">
                 <a href="index.html" class="menu__item">Home</a>
@@ -15,6 +17,44 @@
                 <a href="book.html" class="menu__item active">Book</a>
             </nav>
         </header>
+        <hr class="line">
+            <main class="book">
+                <form class="form" action="">
+                    <h1 class="form__heading">BOOK HERE</h1>
+                    <section class="form__check">
+                        <label>Check in</label>
+                        <input type="date" placeholder="Check-in">
+                        <label>Check out</label>
+                        <input type="date" placeholder="Check-out">
+                        <label for="room">Choose room</label>
+                        <select name="which-room" id="room">
+                            <option value="">Choose room</option>
+                            <option value="room-one">Room Aha ha Wasp</option>
+                            <option value="room-two">Room Shovelnose Guitarfish</option>
+                            <option value="room-three">Room Monkeyface Prickleback</option>
+                            <option value="room-four">Room Sparklemuffin</option>
+                            <option value="room-five">Room Fried Egg Jellyfish</option>
+                            <option value="room-six">Room Screaming Hairy Armadillo</option>
+                        </select>
+                        <label>How many are you:</label>
+                        <input type="number" placeholder="Number of people">
+                    </section>
+                    <section class="form__personal-info">
+                        <label>Your email</label>
+                        <input type="email" placeholder="Email address">
+                        <label>Your Phone number</label>
+                        <input type="phone" placeholder="Phone number">
+                        <label>Your first name</label>
+                        <input type="text" placeholder="First name">
+                        <label>Your Last name</label>
+                        <input type="text" placeholder="Last name">
+                    </section>
+                    
+                        <input class="form__submit-button" type="submit" placeholder="Send">
+                    
+                </form>
+            </main>
+        <hr class="line">
         <footer class="footer">
             <section class="footer__menu">
                 <h3 class="footer__heading">Bonz.ai</h3>
@@ -26,6 +66,7 @@
                 <a href="book.html" class="menu__item">Book</a>
             </section>
         </footer>
-    </div>
+    </section>
 </body>
+
 </html>
