@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,21 +10,24 @@ body {
     background-color: #000;
 }
 
+h1,
+h2,
+h3,
+p,
+a,
+button {
+    font-family: 'Quicksand', sans-serif;
+    color: #E966A0;
+}
+
 .wrapper {
-    background-color: black;
-    border: 1px #E966A0;
-    border-style: hidden solid;
+    background-color: black;    
     width: 1000px;
     margin: auto;
 }
 
-.header {
-    background-color: hotpink;
-}
-
-
 .header__nav--menu {
-    background-color: grey;
+    background-color: #2B2730;
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -30,17 +35,16 @@ body {
 
 .menu__item .active {
     color: #000;
-    font-weight: 600;
 }
 
 .menu__item {
     text-decoration: none;
     padding: 1.5rem 5rem;
-    color: rgba(0, 0, 0, 0.7);
+    font-size: 2rem;
 }
 
 .menu__item:hover {
-    background-color: #9575DE;
+    color: #000;
 }
 
 
@@ -62,18 +66,16 @@ body {
     grid-column: 2 / span 2;
     grid-row: 3;
     background-color: #2B2730;
-    color: #E966A0;
     height: 40%;
     width: 40%;
-    align-self: center;
     margin: auto;
     border: none;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    font-size: 2rem;
 }
 
 .header__heading {
-    color: #E966A0;
     font-size: 5rem;
     grid-column: 2 / span 2;
     grid-row: 1;
@@ -82,7 +84,6 @@ body {
 }
 
 .header__heading--small {
-    color: #E966A0;
     font-size: 2rem;
     grid-column: 2 / span 2;
     grid-row: 2;
@@ -93,12 +94,11 @@ body {
     grid-column: 2 / span 2;
     grid-row: 4;
     text-align: center;
-    color: #E966A0;
 }
 
 .main__content--section {
-    background-color: #E966A0;
-    height: 100vh;
+    background-color: #2B2730;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -106,7 +106,6 @@ body {
 .main__content--heading {
     grid-area: 1 / 2 / span 1 / span 1;
     text-align: center;
-    color: #504f4f;
     padding: .5rem;
     font-size: 2rem;
 }
@@ -141,14 +140,16 @@ body {
 }
 
 .main__content--image {
-    height: 25vh;
-    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
     grid-area: 1 / 1 / span 4 / span 2;
-    justify-self: center;
+    padding: .3rem;
 }
 
 .main__content--small-heading {
     grid-area: auto / 1 / auto / span 2;
+    padding: 1rem;
     justify-self: center;
 }
 
@@ -160,7 +161,6 @@ body {
 
 .main__content--button {
     background-color: #2B2730;
-    color: #E966A0;
     height: 2rem;
     width: 4rem;
     align-self: center;
@@ -172,7 +172,18 @@ body {
     margin: 1rem;
 }
 
+/* book */
+
+
 .footer {
-    background-color: #9575DE;
-    height: 20vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #2B2730;
+    height: 25vh;
+}
+
+.footer__menu {
+    grid-area: 1 / 1 / 1 / span 4;
+    justify-self: center;
+    margin-top: 5rem;
 }
