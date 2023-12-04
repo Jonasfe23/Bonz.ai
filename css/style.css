@@ -340,10 +340,16 @@ input[type=submit] {
     text-align: center;
 }
 
+.about__article {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
 .about__image {
     object-fit: contain;
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
+    margin: auto;
 }
 
 .about__text {
@@ -351,19 +357,27 @@ input[type=submit] {
 }
 
 .about__one {
-    grid-area: 3 / 2 / span 2 / span 2;   
+    grid-area: 2 / 1 / span 3 / span 3;
+    margin: 2rem; 
+    padding: 1rem;  
 }
 
 .about__two {
-    grid-area: 3 / 4 / span 2 / span 2;
+    grid-area: 2 / 5 / span 3 / span 3;
+    margin: 2rem;
+    padding: 1rem;
 }
 
 .about__three {
-    grid-area: 5 / 2 / span 2 / span 2;
+    grid-area: 4 / 3 / span 2 / span 2;
+    margin: 2rem;
+    padding: 1rem;
 }
 
 .about__four {
-    grid-area: 5 / 4 / span 2 / span 2;    
+    grid-area: 6 / 3 / span 2 / span 2;   
+    margin: 2rem; 
+    padding: 1rem;
 }
 
 /*footer*/
