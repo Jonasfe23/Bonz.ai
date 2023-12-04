@@ -19,17 +19,21 @@
         </header>
         <hr class="line">
         <main class="book">
-            <form class="form" action="">
-                <h1 class="form__heading">BOOK HERE</h1>
-                <img src="assets/logo/bonz.ai-logo-black-symbol.png" alt="logo" class="logo">
-                <section class="form__check">
+            <section class="form__book">
+                <form class="form" action="">
+                    <h1 class="form__heading">BOOK HERE</h1>
+                <section class="form__input-one">    
                     <label>Check in</label>
                     <input type="date" placeholder="Check-in">
+                </section>
+                <section class="form__input-two"> 
                     <label>Check out</label>
                     <input type="date" placeholder="Check-out">
-                    <label for="room">Choose room</label>
+                </section>
+                <section class="form__input-three">
+                    <label>Room</label>
                     <select name="which-room" id="room">
-                        <option value="">Choose room</option>
+                        <option value="">Room</option>
                         <option value="room-one">Room Aha ha Wasp</option>
                         <option value="room-two">Room Shovelnose Guitarfish</option>
                         <option value="room-three">Room Monkeyface Prickleback</option>
@@ -37,33 +41,46 @@
                         <option value="room-five">Room Fried Egg Jellyfish</option>
                         <option value="room-six">Room Screaming Hairy Armadillo</option>
                     </select>
-                    <label>How many are you:</label>
+                </section>
+                <section class="form__input-four">
+                    <label>Humans</label>
                     <input type="number" placeholder="Number of people">
                 </section>
-                <section class="form__personal-info">
-                    <label>Your email</label>
-                    <input type="email" placeholder="Email address">
-                    <label>Your Phone number</label>
-                    <input type="phone" placeholder="Phone number">
-                    <label>Your first name</label>
-                    <input type="text" placeholder="First name">
-                    <label>Your Last name</label>
-                    <input type="text" placeholder="Last name">
+                <section class="form__input-five">
+                    <label>First name</label>
+                    <input type="email" placeholder="First name">
                 </section>
-
-                <input class="form__submit-button" type="submit" value="Send">
-                <p class="book__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officia, dolore quaerat! Eveniet quo impedit iusto, delectus non ex.
-                    Neque laboriosam,
-                    sequi nostrum delectus quam,
-                    sit deleniti molestiae architecto rem iusto modi quasi sapiente magni inventore?
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Alias enim voluptas placeat recusandae corporis quia, 
-                    consequatur expedita dignissimos in quo suscipit soluta modi totam neque officia. 
-                    Excepturi unde aliquam amet numquam nulla sed repellendus repellat!
-                </p>
+                <section class="form__input-six">
+                    <label>Last name</label>
+                    <input type="phone" placeholder="Last name">
+                </section>
+                <section class="form__input-seven">
+                    <label>Email</label>
+                    <input type="text" placeholder="Email address">
+                </section>
+                <section class="form__input-eight">
+                    <label>Phone</label>
+                    <input type="text" placeholder="Phone number">
+                </section>
+                <section class="form__input-textarea">
+                    <label>Other wishes</label>
+                <textarea placeholder="Write wishes here..." id="wishes" name="wishes" rows="8" cols="58">
+                </textarea>
+            </section>
+            <input type="submit" value="Send">
             </form>
+        </section>
+            <p class="book__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia, dolore quaerat! Eveniet quo impedit iusto, delectus non ex.
+                Neque laboriosam,
+                sequi nostrum delectus quam,
+                sit deleniti molestiae architecto rem iusto modi quasi sapiente magni inventore?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Alias enim voluptas placeat recusandae corporis quia,
+                consequatur expedita dignissimos in quo suscipit soluta modi totam neque officia.
+                Excepturi unde aliquam amet numquam nulla sed repellendus repellat!
+            </p>
         </main>
         <hr class="line">
         <footer class="footer">
