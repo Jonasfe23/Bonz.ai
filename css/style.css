@@ -35,7 +35,9 @@ button {
     margin: 0 auto;
 }
 
-.header__nav--menu {
+/* Desktop Menu */
+
+.header__nav-menu {
     background-color: var(--background);
     height: 100%;
     display: flex;
@@ -56,17 +58,119 @@ button {
     color: #000;
 }
 
+/* Mobile Menu */
+.header__nav-menu--hamburger {
+    background-color: var(--background);
+    height: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+#menuToggle {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: var(--color-font);
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: #000;
+}
+
+#menuToggle input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: var(--color-font);
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: var(--color-font);
+}
+
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -90px;
+    padding: 50px;
+    padding-top: 125px;
+    background: var(--background);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+#menuToggle input:checked~ul {
+    transform: none;
+}
+
 /*header*/
 
-.header__hero--image {
+.header__hero-image {
     background-image: url(../assets/photos/09-night.jpg);
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
 }
 
-.header__hero--section {
+.header__hero-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     height: 100%;
@@ -79,13 +183,13 @@ button {
     align-self: center;
 }
 
-.header__heading--small {
+.header__sub-heading {
     grid-area: 2 / 2 / 2 /span 2;
     font-size: 2rem;
     text-align: center;
 }
 
-.header__hero--button {
+.header__hero-button {
     grid-area: 3 / 2 / 3 / span 2;
     background-color: #2B2730;
     height: 40%;
@@ -99,7 +203,7 @@ button {
     font-size: 2rem;
 }
 
-.menu__item--button {
+.menu__item-button {
     text-decoration: none;
 }
 
@@ -191,7 +295,6 @@ button {
 .book {
     background-color: var(--background);
     height: 100%;
-    
 }
 
 .form__heading {
@@ -212,7 +315,6 @@ button {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(7, 1fr);
     gap: 5px;
-    
 }
 
 .form__input-one {
@@ -282,7 +384,8 @@ button {
     color: #E966A0;
 }
 
-input, select {
+input,
+select {
     width: 200px;
     margin-top: .5rem;
     padding: 10px;
@@ -352,7 +455,6 @@ input[type=submit] {
 
 .about__text {
     grid-area: 6 / 2 / 6 / span 4;
-    
     object-fit: contain;
     text-align: center;
 }
@@ -366,11 +468,11 @@ input[type=submit] {
 }
 
 .about__three {
-    grid-area: 4 / 2 / span 2 / span 2;  
+    grid-area: 4 / 2 / span 2 / span 2;
 }
 
 .about__four {
-    grid-area: 4 / 4 / span 2 / span 2;   
+    grid-area: 4 / 4 / span 2 / span 2;
 }
 
 /*footer*/
@@ -401,4 +503,110 @@ input[type=submit] {
     padding: 3rem;
 }
 
+@media only screen and (min-width: 800px) {
+    #menu, #menuToggle {
+        visibility: hidden;
+    }
 
+}
+
+@media only screen and (max-width: 800px) {
+
+    .wrapper {
+        width: 90%; 
+      }
+
+    .menu__item {
+        visibility: hidden;
+        text-decoration: none;
+        padding: 1.5rem 2,5rem;
+        font-size: 2rem
+    }
+
+    
+    .header__hero-section {
+      grid-template-columns: 1fr; 
+    }
+  
+    .header__heading {
+      font-size: 3rem; 
+    }
+  
+    .header__sub-heading {
+      font-size: 1.5rem; 
+    }
+
+    .main__content--room-one {
+        grid-area: 2 / 1 / span 2 / span 3;
+        
+    }
+    
+    .main__content--room-two {
+        grid-area: 4 / 1 / span 2 / span 3;
+    }
+    
+    .main__content--room-three {
+        grid-area: 6 / 1 / span 2 / span 3;
+    }
+    
+    .main__content--room-four {
+        grid-area: 8 / 1 / span 2 / span 3;
+    }
+    
+    .main__content--room-five {
+        grid-area: 10 / 1 / span 2 / span 3;
+    }
+    
+    .main__content--room-six {
+        grid-area: 12 / 1 / span 2 / span 3;
+    }
+
+    .about {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+    }
+
+    .about__heading {
+        grid-area: 1 / 2 / 1 / span 2;
+        font-size: 2rem;
+        justify-self: center;
+    }
+
+    .about__one {
+        grid-area: 2 / 1 / span 2 / span 4;
+    }
+    
+    .about__two {
+        grid-area: 4 / 1 / span 2 / span 4;
+    }
+    
+    .about__three {
+        grid-area: 6 / 1 / span 2 / span 4;
+    }
+    
+    .about__four {
+        grid-area: 8 / 1 / span 2 / span 4;
+    }
+
+    .about__text {
+        visibility: hidden;
+    }
+
+}
+    @media only screen and (min-width: 1200px) {
+      
+        .header__hero-section {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      
+        .header__heading {
+          font-size: 5rem; 
+        }
+      
+        .header__sub-heading {
+          font-size: 2rem; 
+        }
+      
+
+}
+  
