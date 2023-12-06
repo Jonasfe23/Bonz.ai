@@ -12,7 +12,7 @@
     <section class="wrapper">
         <header class="header">
             <!-- Mobile Menu Lånad från internet med lite modifikationer -->
-            <nav class="header__nav-menu--hamburger">
+            <nav class="header__nav-menu header__nav-menu--hamburger">
                 <div id="menuToggle">
                     <input type="checkbox" />
                     <span></span>
@@ -43,78 +43,78 @@
             <section class="form__book">
                 <form class="form" action="">
                     <h1 class="form__heading">BOOK HERE</h1>
-                <section class="form__input-one">    
-                    <label>Check in</label>
-                    <input type="date" placeholder="Check-in">
-                </section>
-                <section class="form__input-two"> 
-                    <label>Check out</label>
-                    <input type="date" placeholder="Check-out">
-                </section>
-                <section class="form__input-three">
-                    <label>Room</label>
-                    <select name="which-room" id="room">
-                        <option value="">Room</option>
-                        <option value="room-one">Room Aha ha Wasp</option>
-                        <option value="room-two">Room Shovelnose Guitarfish</option>
-                        <option value="room-three">Room Monkeyface Prickleback</option>
-                        <option value="room-four">Room Sparklemuffin</option>
-                        <option value="room-five">Room Fried Egg Jellyfish</option>
-                        <option value="room-six">Room Screaming Hairy Armadillo</option>
-                    </select>
-                </section>
-                <section class="form__input-four">
-                    <label>Humans</label>
-                    <input type="number" placeholder="Number of people">
-                </section>
-                <section class="form__input-five">
-                    <label>First name</label>
-                    <input type="email" placeholder="First name">
-                </section>
-                <section class="form__input-six">
-                    <label>Last name</label>
-                    <input type="phone" placeholder="Last name">
-                </section>
-                <section class="form__input-seven">
-                    <label>Email</label>
-                    <input type="text" placeholder="Email address">
-                </section>
-                <section class="form__input-eight">
-                    <label>Phone</label>
-                    <input type="text" placeholder="Phone number">
-                </section>
-                <section class="form__input-textarea">
-                    <label>Other wishes</label>
-                <textarea placeholder="Write wishes here..." id="wishes" name="wishes">
+                        <section class="form__input-one">
+                            <label class="form__label">Check in</label>
+                            <input class="form__input" type="date" placeholder="Check-in">
+                        </section>
+                        <section class="form__input-two">
+                            <label class="form__label">Check out</label>
+                            <input class="form__input" type="date" placeholder="Check-out">
+                        </section>
+                        <section class="form__input-three">
+                            <label class="form__label">Room</label>
+                            <select name="which-room" id="room">
+                                <option value="">Room</option>
+                                <option value="room-one">Room Aha ha Wasp</option>
+                                <option value="room-two">Room Shovelnose Guitarfish</option>
+                                <option value="room-three">Room Monkeyface Prickleback</option>
+                                <option value="room-four">Room Sparklemuffin</option>
+                                <option value="room-five">Room Fried Egg Jellyfish</option>
+                                <option value="room-six">Room Screaming Hairy Armadillo</option>
+                            </select>
+                        </section>
+                        <section class="form__input-four">
+                            <label class="form__label">Humans</label>
+                            <input class="form__input" type="number" placeholder="Number of people">
+                        </section>
+                        <section class="form__input-five">
+                            <label class="form__label">First name</label>
+                            <input class="form__input" type="email" placeholder="First name">
+                        </section>
+                        <section class="form__input-six">
+                            <label class="form__label">Last name</label>
+                            <input class="form__input" class="form__input" type="phone" placeholder="Last name">
+                        </section>
+                        <section class="form__input-seven">
+                            <label class="form__label">Email</label>
+                            <input class="form__input" type="text" placeholder="Email address">
+                        </section>
+                        <section class="form__input-eight">
+                            <label class="form__label">Phone</label>
+                            <input class="form__input" type="text" placeholder="Phone number">
+                        </section>
+                        <section class="form__input-textarea">
+                            <label class="form__label">Other wishes</label>
+                            <textarea class="form__textarea" placeholder="Write wishes here..." id="wishes" name="wishes">
                 </textarea>
-            </section>
-            <input type="submit" value="Send">
-            </form>
+                        </section>
+                        <input type="submit" value="Send">
+                </form>
+    </section>
+    <p class="book__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Officia, dolore quaerat! Eveniet quo impedit iusto, delectus non ex.
+        Neque laboriosam,
+        sequi nostrum delectus quam,
+        sit deleniti molestiae architecto rem iusto modi quasi sapiente magni inventore?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Alias enim voluptas placeat recusandae corporis quia,
+        consequatur expedita dignissimos in quo suscipit soluta modi totam neque officia.
+        Excepturi unde aliquam amet numquam nulla sed repellendus repellat!
+    </p>
+    </main>
+    <hr class="line">
+    <footer class="footer">
+        <section class="footer__menu">
+            <h3 class="footer__heading">Bonz.ai</h3>
+            <medium class="copyright">
+                &copy; Copyright 2023 Bonz.ai
+            </medium>
+            <a href="index.html" class="menu__item active">Home</a>
+            <a href="about.html" class="menu__item">About</a>
+            <a href="book.html" class="menu__item">Book</a>
         </section>
-            <p class="book__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officia, dolore quaerat! Eveniet quo impedit iusto, delectus non ex.
-                Neque laboriosam,
-                sequi nostrum delectus quam,
-                sit deleniti molestiae architecto rem iusto modi quasi sapiente magni inventore?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Alias enim voluptas placeat recusandae corporis quia,
-                consequatur expedita dignissimos in quo suscipit soluta modi totam neque officia.
-                Excepturi unde aliquam amet numquam nulla sed repellendus repellat!
-            </p>
-        </main>
-        <hr class="line">
-        <footer class="footer">
-            <section class="footer__menu">
-                <h3 class="footer__heading">Bonz.ai</h3>
-                <medium class="copyright">
-                    &copy; Copyright 2023 Bonz.ai
-                </medium>
-                <a href="index.html" class="menu__item active">Home</a>
-                <a href="about.html" class="menu__item">About</a>
-                <a href="book.html" class="menu__item">Book</a>
-            </section>
-        </footer>
+    </footer>
     </section>
 </body>
 

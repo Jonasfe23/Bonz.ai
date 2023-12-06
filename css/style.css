@@ -8,7 +8,7 @@
 
 :root {
     --background: #2B2730;
-    --color-font: #E966A0;
+    --color-text: #E966A0;
     --color-hover: #000;
 }
 
@@ -23,7 +23,7 @@ p,
 a,
 button {
     font-family: 'Quicksand', sans-serif;
-    color: var(--color-font);
+    color: var(--color-text);
 }
 
 .line {
@@ -31,7 +31,7 @@ button {
 }
 
 .wrapper {
-    width: 1000px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -39,7 +39,7 @@ button {
 
 .header__nav-menu {
     background-color: var(--background);
-    height: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -78,7 +78,7 @@ button {
 
 #menuToggle a {
     text-decoration: none;
-    color: var(--color-font);
+    color: var(--color-text);
     transition: color 0.3s ease;
 }
 
@@ -215,71 +215,71 @@ button {
 
 /*main*/
 
-.main__content--section {
+.main__content-section {
     background-color: #2B2730;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.main__content--heading {
+.main__content-heading {
     grid-area: 1 / 2 / span 1 / span 1;
     text-align: center;
     padding: .5rem;
     font-size: 3rem;
 }
 
-.main__content--room {
+.main__content-room {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.main__content--room-one {
+.main__content-room--one {
     grid-area: 2 / 1 / span 1 / span 1;
 }
 
-.main__content--room-two {
+.main__content-room--two {
     grid-area: 2 / 2 / span 1 / span 1;
 }
 
-.main__content--room-three {
+.main__content-room--three {
     grid-area: 2 / 3 / span 1 / span 1;
 }
 
-.main__content--room-four {
+.main__content-room--four {
     grid-area: 3 / 1 / span 1 / span 1;
 }
 
-.main__content--room-five {
+.main__content-room--five {
     grid-area: 3 / 2 / span 1 / span 1;
 }
 
-.main__content--room-six {
+.main__content-room--six {
     grid-area: 3 / 3 / span 1 / span 1;
 }
 
-.main__content--image {
+.main__content-image {
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     object-fit: contain;
     grid-area: 1 / 1 / span 4 / span 2;
     padding: .3rem;
 }
 
-.main__content--small-heading {
+.main__content-small-heading {
     grid-area: auto / 1 / auto / span 2;
     padding: 1rem;
     justify-self: center;
 }
 
-.main__content--text {
+.main__content-text {
     grid-area: auto / 1 / auto / span 2;
     text-align: center;
     object-fit: contain;
     margin: 0 .5rem 0 .5rem;
 }
 
-.main__content--button {
+.main__content-button {
     background-color: #2B2730;
     height: 2rem;
     width: 4rem;
@@ -318,18 +318,19 @@ button {
     gap: 5px;
 }
 
+
 .form__input-one {
     grid-area: 2 / 2 / 2 / span 1;
     max-width: 100%;
     justify-self: center;
-    color: #E966A0;
+    color: var(--color-text);
     padding: .5rem;
 }
 
 .form__input-two {
     grid-area: 2 / 3 / 2 / span 1;
     max-width: 100%;
-    color: #E966A0;
+    color: var(--color-text);
     padding: .5rem;
 }
 
@@ -337,14 +338,14 @@ button {
     grid-area: 3 / 2 / 3 / span 1;
     max-width: 100%;
     justify-self: center;
-    color: #E966A0;
+    color: var(--color-text);
     padding: .5rem;
 }
 
 .form__input-four {
     grid-area: 3 / 3 / 3 / span 1;
     max-width: 100%;
-    color: #E966A0;
+    color: var(--color-text);
     padding: .5rem;
 }
 
@@ -352,14 +353,14 @@ button {
     grid-area: 4 / 2 / 4 / span 1;
     max-width: 100%;
     justify-self: center;
-    color: #E966A0;
+    color: var(--color-text);
     padding: .5rem;
 }
 
 .form__input-six {
     grid-area: 4 / 3 / 4 / span 1;
     max-width: 100%;
-    color: #E966A0;
+    color: var(--color-text);
     padding: .5rem;
 }
 
@@ -367,32 +368,33 @@ button {
     grid-area: 5 / 2 / 5 / span 1;
     max-width: 100%;
     justify-self: center;
-    color: #E966A0;
-    padding: .5rem;
+    color: var(--color-text);
+    padding: 1.5rem;
 }
 
 .form__input-eight {
     grid-area: 5/ 3 / 5 / span 1;
     max-width: 100%;
-    color: #E966A0;
+    color: var(--color-text);
     padding: .5rem;
 }
+
 
 .form__input-textarea {
     grid-area: 6/ 2 / 6 / span 2;
     padding: .5rem;
-    color: #E966A0;
+    color: var(--color-text);
 }
 
-input,
+.form__input,
 select {
     width: 200px;
     margin-top: .5rem;
-    padding: 10px;
+    padding: 1rem;
     border: solid 1px #E966A0;
 }
 
-textarea {
+.form__textarea {
     margin-top: .5rem;
     border: solid 1px #E966A0;
     height: 150px;
@@ -407,7 +409,7 @@ input[type=submit] {
     width: 40%;
     background-color: var(--background);
     font-family: 'Quicksand', sans-serif;
-    color: #E966A0;
+    color: var(--color-text);
     cursor: pointer;
 }
 
@@ -442,7 +444,7 @@ input[type=submit] {
     grid-template-columns: repeat(4, 1fr);
 }
 
-.about__small--heading {
+.about__small-heading {
     grid-area: 1 / 2 / 1 / span 2;
     text-align: center;
     margin: .8rem;
@@ -505,27 +507,19 @@ input[type=submit] {
     padding: 3rem;
 }
 
-@media only screen and (min-width: 414px) {
+
+@media only screen and (min-width: 850px) {
 
     #menu,
     #menuToggle {
         visibility: hidden;
     }
-
 }
 
-@media only screen and (max-width: 414px) {
-
-    .wrapper {
-        width: 90%;
-    }
+@media only screen and (max-width: 850px) {
 
     .menu__item {
-        visibility: hidden;
-        text-decoration: none;
-        height: 70px;
-        padding: 0 0;
-        font-size: .5rem
+        padding: 2rem 1.7rem;
     }
 
 
@@ -541,33 +535,120 @@ input[type=submit] {
         font-size: 1.5rem;
     }
 
-    .main__content--room-one {
+    .main__content-room--one {
         grid-area: 2 / 1 / span 2 / span 3;
     }
 
-    .main__content--room-two {
+    .main__content-room--two {
         grid-area: 4 / 1 / span 2 / span 3;
     }
 
-    .main__content--room-three {
+    .main__content-room--three {
         grid-area: 6 / 1 / span 2 / span 3;
     }
 
-    .main__content--room-four {
+    .main__content-room--four {
         grid-area: 8 / 1 / span 2 / span 3;
     }
 
-    .main__content--room-five {
+    .main__content-room--five {
         grid-area: 10 / 1 / span 2 / span 3;
     }
 
-    .main__content--room-six {
+    .main__content-room--six {
         grid-area: 12 / 1 / span 2 / span 3;
     }
 
     .about {
         grid-template-columns: repeat(4, 1fr);
-        gap: 0;
+    }
+
+    .about__article {
+        margin-left: 2%;
+        padding: 5%;
+    }
+
+    .about__heading {
+        grid-area: 1 / 2 / 1 / span 2;
+        font-size: 2rem;
+        justify-self: center;
+    }
+
+    .about__one {
+        grid-area: 2 / 1 / span 2 / span 4;
+    }
+
+    .about__two {
+        grid-area: 4 / 1 / span 2 / span 4;
+    }
+
+    .about__three {
+        grid-area: 6 / 1 / span 2 / span 4;
+    }
+
+    .about__four {
+        grid-area: 8 / 1 / span 2 / span 4;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 560px) {
+    
+    #menu,
+    #menuToggle {
+        visibility: hidden;
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+
+    .menu__item {
+        visibility: hidden;
+        padding: 1.5rem 1rem;
+    }
+
+
+    .header__hero-section {
+        grid-template-columns: 1fr;
+    }
+
+    .header__heading {
+        font-size: 3rem;
+    }
+
+    .header__sub-heading {
+        font-size: 1.5rem;
+    }
+
+    .main__content-room--one {
+        grid-area: 2 / 1 / span 2 / span 3;
+    }
+
+    .main__content-room--two {
+        grid-area: 4 / 1 / span 2 / span 3;
+    }
+
+    .main__content-room--three {
+        grid-area: 6 / 1 / span 2 / span 3;
+    }
+
+    .main__content-room--four {
+        grid-area: 8 / 1 / span 2 / span 3;
+    }
+
+    .main__content-room--five {
+        grid-area: 10 / 1 / span 2 / span 3;
+    }
+
+    .main__content-room--six {
+        grid-area: 12 / 1 / span 2 / span 3;
+    }
+
+    .about {
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .about__heading {
@@ -650,14 +731,13 @@ input[type=submit] {
         margin-left: 6%;
     }
 
-    textarea {
+    .form__textarea {
         height: 100px;
         width: 220px
     }
 
-    input[type=submit] {
+    .form__input-button[type=submit] {
         grid-area: 11 / 2 / 11 / span 2;
     }
 
 }
-
