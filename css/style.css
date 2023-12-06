@@ -110,8 +110,8 @@ button {
     z-index: 1;
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-    opacity 0.55s ease;
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
 }
 
 #menuToggle span:first-child {
@@ -167,6 +167,7 @@ button {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    max-width: 100%;
     height: 100vh;
 }
 
@@ -319,7 +320,7 @@ button {
 
 .form__input-one {
     grid-area: 2 / 2 / 2 / span 1;
-    width: 200px;
+    max-width: 100%;
     justify-self: center;
     color: #E966A0;
     padding: .5rem;
@@ -327,14 +328,14 @@ button {
 
 .form__input-two {
     grid-area: 2 / 3 / 2 / span 1;
-    width: 200px;
+    max-width: 100%;
     color: #E966A0;
     padding: .5rem;
 }
 
 .form__input-three {
     grid-area: 3 / 2 / 3 / span 1;
-    width: 200px;
+    max-width: 100%;
     justify-self: center;
     color: #E966A0;
     padding: .5rem;
@@ -342,14 +343,14 @@ button {
 
 .form__input-four {
     grid-area: 3 / 3 / 3 / span 1;
-    width: 200px;
+    max-width: 100%;
     color: #E966A0;
     padding: .5rem;
 }
 
 .form__input-five {
     grid-area: 4 / 2 / 4 / span 1;
-    width: 200px;
+    max-width: 100%;
     justify-self: center;
     color: #E966A0;
     padding: .5rem;
@@ -357,14 +358,14 @@ button {
 
 .form__input-six {
     grid-area: 4 / 3 / 4 / span 1;
-    width: 200px;
+    max-width: 100%;
     color: #E966A0;
     padding: .5rem;
 }
 
 .form__input-seven {
     grid-area: 5 / 2 / 5 / span 1;
-    width: 200px;
+    max-width: 100%;
     justify-self: center;
     color: #E966A0;
     padding: .5rem;
@@ -372,8 +373,7 @@ button {
 
 .form__input-eight {
     grid-area: 5/ 3 / 5 / span 1;
-    width: 200px;
-    height: 50%;
+    max-width: 100%;
     color: #E966A0;
     padding: .5rem;
 }
@@ -395,6 +395,8 @@ select {
 textarea {
     margin-top: .5rem;
     border: solid 1px #E966A0;
+    height: 150px;
+    width: 440px;
 }
 
 input[type=submit] {
@@ -503,60 +505,62 @@ input[type=submit] {
     padding: 3rem;
 }
 
-@media only screen and (min-width: 800px) {
-    #menu, #menuToggle {
+@media only screen and (min-width: 414px) {
+
+    #menu,
+    #menuToggle {
         visibility: hidden;
     }
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 414px) {
 
     .wrapper {
-        width: 90%; 
-      }
+        width: 90%;
+    }
 
     .menu__item {
         visibility: hidden;
         text-decoration: none;
-        padding: 1.5rem 2,5rem;
-        font-size: 2rem
+        height: 70px;
+        padding: 0 0;
+        font-size: .5rem
     }
 
-    
+
     .header__hero-section {
-      grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
-  
+
     .header__heading {
-      font-size: 3rem; 
+        font-size: 3rem;
     }
-  
+
     .header__sub-heading {
-      font-size: 1.5rem; 
+        font-size: 1.5rem;
     }
 
     .main__content--room-one {
         grid-area: 2 / 1 / span 2 / span 3;
-        
     }
-    
+
     .main__content--room-two {
         grid-area: 4 / 1 / span 2 / span 3;
     }
-    
+
     .main__content--room-three {
         grid-area: 6 / 1 / span 2 / span 3;
     }
-    
+
     .main__content--room-four {
         grid-area: 8 / 1 / span 2 / span 3;
     }
-    
+
     .main__content--room-five {
         grid-area: 10 / 1 / span 2 / span 3;
     }
-    
+
     .main__content--room-six {
         grid-area: 12 / 1 / span 2 / span 3;
     }
@@ -575,15 +579,15 @@ input[type=submit] {
     .about__one {
         grid-area: 2 / 1 / span 2 / span 4;
     }
-    
+
     .about__two {
         grid-area: 4 / 1 / span 2 / span 4;
     }
-    
+
     .about__three {
         grid-area: 6 / 1 / span 2 / span 4;
     }
-    
+
     .about__four {
         grid-area: 8 / 1 / span 2 / span 4;
     }
@@ -592,21 +596,68 @@ input[type=submit] {
         visibility: hidden;
     }
 
-}
-    @media only screen and (min-width: 1200px) {
-      
-        .header__hero-section {
-          grid-template-columns: repeat(4, 1fr);
-        }
-      
-        .header__heading {
-          font-size: 5rem; 
-        }
-      
-        .header__sub-heading {
-          font-size: 2rem; 
-        }
-      
+    .form {
+        grid-template-rows: repeat(11, 1fr);
+    }
+
+
+    .form__heading {
+        font-size: 2rem;
+    }
+
+    .form__input-one {
+        grid-area: 2 / 2 / 2 / span 1;
+        margin-left: 9%;
+    }
+
+    .form__input-two {
+        grid-area: 3 / 2 / 3 / span 1;
+        margin-left: 9%;
+    }
+
+    .form__input-three {
+        grid-area: 4 / 2 / 4 / span 1;
+        margin-left: 9%;
+    }
+
+    .form__input-four {
+        grid-area: 5 / 2 / 5 / span 1;
+        margin-left: 9%;
+    }
+
+    .form__input-five {
+        grid-area: 6 / 2 / 6 / span 1;
+        margin-left: 9%;
+    }
+
+    .form__input-six {
+        grid-area: 7 / 2 / 7 / span 1;
+        margin-left: 9%;
+    }
+
+    .form__input-seven {
+        grid-area: 8 / 2 / 8 / span 1;
+        margin-left: 9%;
+    }
+
+    .form__input-eight {
+        grid-area: 9 / 2 / 9 / span 1;
+        margin-left: 9%;
+    }
+
+    .form__input-textarea {
+        grid-area: 10 / 2 / 10 / span 1;
+        margin-left: 6%;
+    }
+
+    textarea {
+        height: 100px;
+        width: 220px
+    }
+
+    input[type=submit] {
+        grid-area: 11 / 2 / 11 / span 2;
+    }
 
 }
-  
+
