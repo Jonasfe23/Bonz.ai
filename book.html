@@ -13,29 +13,23 @@
         <header class="header">
             <!-- Mobile Menu Lånad från internet med lite modifikationer -->
             <nav class="header__nav-menu header__nav-menu--hamburger">
-                <div id="menuToggle">
+                <section class="menu-toggle">
                     <input type="checkbox" />
                     <span></span>
                     <span></span>
                     <span></span>
-                    <ul id="menu">
-                        <a href="index.html">
-                            <li>Home</li>
-                        </a>
-                        <a href="about.html">
-                            <li>About</li>
-                        </a>
-                        <a href="book.html">
-                            <li>Book</li>
-                        </a>
+                    <ul class="menu">
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="about.html"><li>About</li></a>
+                        <a href="book.html"><li>Book</li></a>
                     </ul>
-                </div>
+                </section>
             </nav>
             <!-- Desktop Menu -->
             <nav class="header__nav-menu">
                 <a href="index.html" class="menu__item">Home</a>
                 <a href="about.html" class="menu__item">About</a>
-                <a href="book.html" class="menu__item active">Book</a>
+                <a href="book.html" class="menu__item menu__item--active">Book</a>
             </nav>
         </header>
         <hr class="line">
@@ -53,7 +47,7 @@
                         </section>
                         <section class="form__input-three">
                             <label class="form__label">Room</label>
-                            <select name="which-room" id="room">
+                            <select class="form__select" name="which-room" id="room">
                                 <option value="">Room</option>
                                 <option value="room-one">Room Aha ha Wasp</option>
                                 <option value="room-two">Room Shovelnose Guitarfish</option>
@@ -88,7 +82,7 @@
                             <textarea class="form__textarea" placeholder="Write wishes here..." id="wishes" name="wishes">
                 </textarea>
                         </section>
-                        <input type="submit" value="Send">
+                        <input class="form__input-button" type="submit" value="Send">
                 </form>
     </section>
     <p class="book__text">
@@ -110,9 +104,9 @@
             <medium class="copyright">
                 &copy; Copyright 2023 Bonz.ai
             </medium>
-            <a href="index.html" class="menu__item active">Home</a>
+            <a href="index.html" class="menu__item">Home</a>
             <a href="about.html" class="menu__item">About</a>
-            <a href="book.html" class="menu__item">Book</a>
+            <a href="book.html" class="menu__item menu__item--active">Book</a>
         </section>
     </footer>
     </section>

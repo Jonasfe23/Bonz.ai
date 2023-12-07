@@ -9,33 +9,28 @@
 </head>
 
 <body>
-    <!--header-->
+    <!-- wrapper -->
     <section class="wrapper">
+        <!-- header -->
         <header class="header">
 
-            <!-- Mobile Menu Lånad från internet med lite modifikationer -->
+            <!-- Mobile Menu (lånad från internet med lite modifikationer) -->
             <nav class="header__nav-menu header__nav-menu--hamburger">
-                <section id="menuToggle">
+                <section class="menu-toggle">
                     <input type="checkbox" />
                     <span></span>
                     <span></span>
                     <span></span>
-                    <ul id="menu">
-                        <a href="index.html">
-                            <li>Home</li>
-                        </a>
-                        <a href="about.html">
-                            <li>About</li>
-                        </a>
-                        <a href="book.html">
-                            <li>Book</li>
-                        </a>
+                    <ul class="menu">
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="about.html"><li>About</li></a>
+                        <a href="book.html"><li>Book</li></a>
                     </ul>
                 </section>
             </nav>
             <!-- Desktop Menu -->
             <nav class="header__nav-menu">
-                <a href="index.html" class="menu__item active">Home</a>
+                <a href="index.html" class="menu__item">Home</a>
                 <a href="about.html" class="menu__item">About</a>
                 <a href="book.html" class="menu__item">Book</a>
             </nav>
@@ -44,7 +39,8 @@
                 <section class="header__hero-section">
                     <h1 class="header__heading">Bonz.ai</h1>
                     <h2 class="header__sub-heading">AI DRIVEN ECO LIVING</h2>
-                    <button class="header__hero-button"><a href="book.html" class="menu__item-button">BOOK</a></button>
+                    <button class="header__hero-button"><a href="book.html"
+                            class="menu__item--button">BOOK</a></button>
                     <p class="header__text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Nihil libero porro natus debitis explicabo culpa!
@@ -53,10 +49,12 @@
             </section>
         </header>
         <hr class="line">
-        <!--main-->
+        <!-- main content -->
         <main class="main__content">
             <section class="main__content-section">
                 <h2 class="main__content-heading">ROOMS</h2>
+
+                <!-- Room articles -->
                 <article class="main__content-room main__content-room--one">
                     <img class="main__content-image" src="assets/photos/01-night.jpg" alt="">
                     <h3 class="main__content-small-heading">Room Aha ha Wasp</h3>
@@ -64,8 +62,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Laudantium, alias.
                     </p>
-                    <button class="main__content-button"><a href="book.html"
-                            class="menu__item-button">BOOK</a></button>
+                    <button class="main__content-button"><a href="book.html">BOOK</a></button>
                 </article>
                 <article class="main__content-room main__content-room--two">
 
@@ -76,8 +73,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Laudantium, alias.
                     </p>
-                    <button class="main__content-button"><a href="book.html"
-                            class="menu__item-button">BOOK</a></button>
+                    <button class="main__content-button"><a href="book.html" >BOOK</a></button>
                 </article>
                 <article class="main__content-room main__content-room--three">
 
@@ -88,8 +84,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Laudantium, alias.
                     </p>
-                    <button class="main__content-button"><a href="book.html"
-                            class="menu__item-button">BOOK</a></button>
+                    <button class="main__content-button"><a href="book.html">BOOK</a></button>
                 </article>
                 <article class="main__content-room main__content-room--four">
 
@@ -100,8 +95,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Laudantium, alias.
                     </p>
-                    <button class="main__content-button"><a href="book.html"
-                            class="menu__item-button">BOOK</a></button>
+                    <button class="main__content-button"><a href="book.html">BOOK</a></button>
                 </article>
                 <article class="main__content-room main__content-room--five">
 
@@ -112,8 +106,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Laudantium, alias.
                     </p>
-                    <button class="main__content-button"><a href="book.html"
-                            class="menu__item-button">BOOK</a></button>
+                    <button class="main__content-button"><a href="book.html">BOOK</a></button>
                 </article>
                 <article class="main__content-room main__content-room--six">
 
@@ -124,20 +117,19 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Laudantium, alias.
                     </p>
-                    <button class="main__content-button"><a href="book.html"
-                            class="menu__item-button">BOOK</a></button>
+                    <button class="main__content-button"><a href="book.html">BOOK</a></button>
                 </article>
             </section>
         </main>
         <hr class="line">
-        <!--footer-->
+        <!-- footer -->
         <footer class="footer">
             <section class="footer__menu">
                 <h3 class="footer__heading">Bonz.ai</h3>
                 <medium class="copyright">
                     &copy; Copyright 2023 Bonz.ai
                 </medium>
-                <a href="index.html" class="menu__item active">Home</a>
+                <a href="index.html" class="menu__item menu__item--active">Home</a>
                 <a href="about.html" class="menu__item">About</a>
                 <a href="book.html" class="menu__item">Book</a>
             </section>
