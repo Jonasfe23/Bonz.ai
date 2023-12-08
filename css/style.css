@@ -45,17 +45,17 @@ button {
     justify-content: center;
 }
 
-.menu__item--active {
+.header__menu-item--active {
     color: #000;
 }
 
-.menu__item  {
+.header__menu-item  {
     text-decoration: none;
     padding: 1.5rem 5rem;
     font-size: 2rem;
 }
 
-.menu__item:hover {
+.header__menu-item:hover {
     color: #000;
 }
 
@@ -67,7 +67,7 @@ button {
     justify-content: start;
 }
 
-.menu-toggle {
+.header__menu-toggle {
     display: block;
     position: relative;
     top: 50px;
@@ -77,17 +77,17 @@ button {
     user-select: none;
 }
 
-.menu-toggle a {
+.header__menu-toggle a {
     text-decoration: none;
     color: var(--color-text);
     transition: color 0.3s ease;
 }
 
-.menu-toggle a:hover {
+.header__menu-toggle a:hover {
     color: #000;
 }
 
-.menu-toggle input {
+.header__menu-toggle input {
     display: block;
     width: 100%;
     height: 100%;
@@ -100,7 +100,7 @@ button {
     -webkit-touch-callout: none;
 }
 
-.menu-toggle span {
+.header__menu-toggle span {
     display: block;
     width: 33px;
     height: 4px;
@@ -115,30 +115,30 @@ button {
     opacity 0.55s ease;
 }
 
-.menu-toggle span:first-child {
+.header__menu-toggle span:first-child {
     transform-origin: 0% 0%;
 }
 
-.menu-toggle span:nth-last-child(2) {
+.header__menu-toggle span:nth-last-child(2) {
     transform-origin: 0% 100%;
 }
 
-.menu-toggle input:checked~span {
+.header__menu-toggle input:checked~span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: var(--color-font);
 }
 
-.menu-toggle input:checked~span:nth-last-child(3) {
+.header__menu-toggle input:checked~span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-.menu-toggle input:checked~span:nth-last-child(2) {
+.header__menu-toggle input:checked~span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
 }
 
-.menu {
+.header__menu {
     position: absolute;
     width: 300px;
     margin: -100px 0 0 -90px;
@@ -152,12 +152,12 @@ button {
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
-.menu li {
+.header__menu li {
     padding: 10px 0;
     font-size: 22px;
 }
 
-.menu-toggle input:checked~ul {
+.header__menu-toggle input:checked~ul {
     transform: none;
 }
 
@@ -510,17 +510,17 @@ button {
 
 @media only screen and (min-width: 1440px) {
 
-    .menu,
-    .menu-toggle {
+    .header__menu,
+    .header__menu-toggle {
         visibility: hidden;
     }
 
-    .menu__item {
+    .header__menu-item {
         padding: 2rem 10rem;
     }
 
     .form__textarea {
-        width: 90%;
+        width: 100%;
     }
     
     .form__input,
@@ -529,14 +529,14 @@ button {
     }
 
     .form__label {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
 }   
 
 @media only screen and (max-width: 1440px) {
-    .menu,
-    .menu-toggle {
+    .header__menu,
+    .header__menu-toggle {
         visibility: hidden;
     }
 
@@ -556,7 +556,7 @@ button {
         width: 200px;
     }
 
-    .menu__item {
+    .header__menu-item {
         padding: 2rem 2.5rem;
     }
 
@@ -634,12 +634,12 @@ button {
 
 @media only screen and (max-width: 560px) {
 
-    .menu,
-    .menu-toggle {
+    .header__menu,
+    .header__menu-toggle {
         visibility: visible;
     }
 
-    .menu__item {
+    .header__menu-item {
     visibility: hidden;
     padding: 1.5rem 1rem;
 }
