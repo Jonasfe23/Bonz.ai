@@ -14,14 +14,14 @@
             <!-- Mobile Menu (lånad från internet med lite modifikationer) -->
             <nav class="header__nav-menu header__nav-menu--hamburger">
                 <section class="header__menu-toggle">
-                    <input type="checkbox"/>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <input class="header__input" type="checkbox"/>
+                    <span class="header__span"></span>
+                    <span class="header__span"></span>
+                    <span class="header__span"></span>
                     <ul class="header__menu">
-                        <a href="index.html"><li>Home</li></a>
-                        <a href="about.html"><li>About</li></a>
-                        <a href="book.html"><li>Book</li></a>
+                        <a href="index.html" class="header__menu-item-hamburger"><li>Home</li></a>
+                        <a href="about.html" class="header__menu-item-hamburger"><li>About</li></a>
+                        <a href="book.html" class="header__menu-item-hamburger"><li>Book</li></a>
                     </ul>
                 </section>
             </nav>
@@ -29,13 +29,13 @@
             <nav class="header__nav-menu">
                 <a href="index.html" class="header__menu-item">Home</a>
                 <a href="about.html" class="header__menu-item">About</a>
-                <a href="book.html" class="header__menu-item">Book</a>
+                <a href="book.html" class="header__menu-item header__menu-item--active">Book</a>
             </nav>
-        </header>
+            </header>
         <hr class="line">
-        <main class="book">
+        <main class="form">
             <section class="form__book">
-                <form class="form" action="">
+                <form class="form__form" action="">
                     <h1 class="form__heading">BOOK HERE</h1>
                         <section class="form__input-one">
                             <label class="form__label">Check in</label>
@@ -85,7 +85,7 @@
                         <input class="form__input-button" type="submit" value="Send">
                 </form>
     </section>
-    <p class="book__text">
+    <p class="form__text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Officia, dolore quaerat! Eveniet quo impedit iusto, delectus non ex.
         Neque laboriosam,
@@ -101,12 +101,12 @@
     <footer class="footer">
         <section class="footer__menu">
             <h3 class="footer__heading">Bonz.ai</h3>
-            <medium class="copyright">
+            <medium class="footer__copyright">
                 &copy; Copyright 2023 Bonz.ai
             </medium>
-            <a href="index.html" class="menu__item">Home</a>
-            <a href="about.html" class="menu__item">About</a>
-            <a href="book.html" class="menu__item menu__item--active">Book</a>
+            <a href="index.html" class="footer__menu-item">Home</a>
+            <a href="about.html" class="footer__menu-item">About</a>
+            <a href="book.html" class="footer__menu-item footer__menu-item--active">Book</a>
         </section>
     </footer>
     </section>

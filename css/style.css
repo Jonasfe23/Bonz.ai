@@ -21,6 +21,7 @@ h2,
 h3,
 p,
 a,
+li,
 button {
     font-family: 'Quicksand', sans-serif;
     color: var(--color-text);
@@ -45,17 +46,17 @@ button {
     justify-content: center;
 }
 
-.header__menu-item--active {
+.header__menu-item--active, .footer__menu-item--active {
     color: #000;
 }
 
-.header__menu-item  {
+.header__menu-item, .footer__menu-item  {
     text-decoration: none;
     padding: 1.5rem 5rem;
     font-size: 2rem;
 }
 
-.header__menu-item:hover {
+.header__menu-item:hover, .footer__menu-item:hover {
     color: #000;
 }
 
@@ -77,17 +78,17 @@ button {
     user-select: none;
 }
 
-.header__menu-toggle a {
+.header__menu-toggle .header__menu-item-hamburger {
     text-decoration: none;
     color: var(--color-text);
     transition: color 0.3s ease;
 }
 
-.header__menu-toggle a:hover {
+.header__menu-toggle:hover .header__menu-item-hamburger:hover {
     color: #000;
 }
 
-.header__menu-toggle input {
+.header__menu-toggle .header__input {
     display: block;
     width: 100%;
     height: 100%;
@@ -100,7 +101,7 @@ button {
     -webkit-touch-callout: none;
 }
 
-.header__menu-toggle span {
+.header__menu-toggle .header__span {
     display: block;
     width: 33px;
     height: 4px;
@@ -115,26 +116,26 @@ button {
     opacity 0.55s ease;
 }
 
-.header__menu-toggle span:first-child {
+.header__menu-toggle .header__span:first-child {
     transform-origin: 0% 0%;
 }
 
-.header__menu-toggle span:nth-last-child(2) {
+.header__menu-toggle .header__span:nth-last-child(2) {
     transform-origin: 0% 100%;
 }
 
-.header__menu-toggle input:checked~span {
+.header__menu-toggle .header__input:checked~span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: var(--color-font);
 }
 
-.header__menu-toggle input:checked~span:nth-last-child(3) {
+.header__menu-toggle .header__input:checked~span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-.header__menu-toggle input:checked~span:nth-last-child(2) {
+.header__menu-toggle .header__input:checked~span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
 }
 
@@ -152,12 +153,12 @@ button {
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
-.header__menu li {
+.header__menu .header__menu-item-hamburger {
     padding: 10px 0;
     font-size: 22px;
 }
 
-.header__menu-toggle input:checked~ul {
+.header__menu-toggle .header__input:checked~ul {
     transform: none;
 }
 
@@ -203,10 +204,6 @@ button {
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
     cursor: pointer;
     font-size: 2rem;
-}
-
-.menu__item-button {
-    text-decoration: none;
 }
 
 .header__text {
@@ -294,7 +291,7 @@ button {
 }
 
 /* book */
-.book {
+.form {
     background-color: var(--background);
     height: 100%;
 }
@@ -312,7 +309,7 @@ button {
     margin: 0 auto;
 }
 
-.form {
+.form__form {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(7, 1fr);
@@ -414,7 +411,7 @@ button {
     cursor: pointer;
 }
 
-.book__text {
+.form__text {
     text-align: center;
     object-fit: contain;
     padding: 3rem;
@@ -496,7 +493,7 @@ button {
     margin-bottom: .5rem;
 }
 
-.copyright {
+.footer__copyright {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
@@ -560,7 +557,7 @@ button {
         padding: 2rem 2.5rem;
     }
 
-    .footer__menu a {
+    .footer__menu-item {
         visibility: hidden;
     }
 
@@ -725,7 +722,7 @@ button {
     width: 200px;
 }
 
-.form {
+.form__form {
     grid-template-rows: repeat(11, 1fr);
 }
 
@@ -787,4 +784,9 @@ button {
 .form__input-button[type=submit] {
     grid-area: 11 / 2 / 11 / span 2;
 }
+
+.footer__menu-item {
+    visibility: hidden;
+}
+
 }
